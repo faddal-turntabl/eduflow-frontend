@@ -1,0 +1,122 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+section{
+    /* flex-grow: 1; */
+}
+
+.feed{
+    width: 35%;
+}
+
+/* post field */
+.post-field{
+    padding: 1rem;
+}
+
+/* .post-field button{
+    
+} */
+
+/* .post-field:focus-within{
+    position: absolute;
+    z-index: 999;
+    height: 100vh;
+    width: initial;
+} */
+
+/* .post-field:focus-within:after{
+    content: 'heyyyyy';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(13,12,14,0.1);
+    top: 0;
+    left: -30vw;
+    z-index: 1;
+} */
+
+.post-field textarea{
+    border: 0.1rem solid #eee;
+    border-radius: 1rem;
+    padding: 1rem;
+    outline: none;
+    resize: none;
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+}
+
+.post-field input[type=text]{
+    border: 0.1rem solid #eee;
+    outline: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom: none;
+    width: 100%;
+    border-bottom-right-radius: 0;
+}
+
+
+/* posts */
+
+
+.posts{
+    padding: 1rem;
+}
+
+.posts .post{
+    animation: fade-In 1s linear;
+}
+
+@keyframes fade-In {
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.post{
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    position: relative;
+}
+
+.post-owner{
+    display: flex;
+}
+
+.post-owner small{
+    color: #aaa;
+    font-weight: 100;
+}
+
+.post-owner div:last-child{
+    justify-self: flex-end;
+    position: absolute;
+    right: 1%;
+
+}
+
+.post img{
+    border-radius: 50%;
+    margin-right: 0.7rem;;
+}
+
+.post-content{
+    padding: 1rem;
+    margin: 0 4rem;
+}
+
+.post-content h1{
+    margin-bottom: 1rem;
+}

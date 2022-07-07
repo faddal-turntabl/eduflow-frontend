@@ -1,0 +1,55 @@
+<main>
+    <section>
+       
+    </section>
+
+
+    <!-- all feeeds -->
+    <section class="feed">
+        <div class="post-field">
+            <form class="post" (submit)="postQuestion($event)">
+                <div class="post-owner">
+                    <div>
+                        <img src="https://picsum.photos/60" alt="">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="title" name="questionTitle" ngModel="question-title" [(ngModel)]="questionTitle">
+                        <textarea name="" id="" cols="75" rows="5" placeholder="post a question" name="questionContent" ngModel="todo-input" [(ngModel)]="questionContent"></textarea>
+                    </div>
+                    <div></div>
+                </div>
+                <div>
+
+                    <button type="submit" mat-button color="accent" style="background-color: crimson; color: white">
+                        post
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- posts -->
+        <div class="posts" *ngFor="let question of questions; let i = index">
+            <div class="post">
+                <div class="post-owner">
+                    <img src="https://picsum.photos/50" alt="">
+                    <div>
+                        <p>{{question.user}}</p>
+                        <small>3 mins ago</small>
+                    </div>
+                    <div>
+                        <mat-icon>bookmark_border</mat-icon>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <h1>{{question.title}}</h1>
+                    {{question.question}}
+                </div>
+                <div class="post-actions">
+                    <section>21 replies</section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- auxilliary -->
+    <section>requests</section>
+</main>
