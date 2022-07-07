@@ -1,0 +1,51 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+section{
+    flex-grow: 1;
+}
+
+.posts{
+
+}
+
+.post{
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.post-owner{
+    display: flex;
+}
+
+.post-owner small{
+    color: #aaa;
+    font-weight: 100;
+}
+
+.post-owner div:last-child{
+    justify-self: flex-end;
+    position: absolute;
+    right: 1%;
+
+}
+
+.post img{
+    border-radius: 50%;
+    margin-right: 0.7rem;;
+}
+
+.post-content{
+    padding: 1rem;
+    margin: 0 4rem;
+}
+
+.post-content h1{
+    margin-bottom: 1rem;
+}
