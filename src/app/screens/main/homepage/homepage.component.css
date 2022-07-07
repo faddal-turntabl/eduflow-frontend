@@ -33,6 +33,7 @@ article{
 
 article h1{
     font-weight: 300;
+    margin-bottom: 3rem;
 }
 
 button{
@@ -43,5 +44,28 @@ button{
 }
 
 .auth-buttons{
-    text-align: center;
+    /* text-align: center; */
+    margin: 0 2.5rem;
+}
+
+.auth-buttons h1{
+    color: white;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.purpose{
+    margin: 3rem 0;
+    line-height: 2.5;
+}
+
+
+.purpose h2{
+    margin-left: 1rem;
+    font-weight: 400;
+}
+
+.purpose > div{
+    display: flex;
+    align-items: center;
 }
