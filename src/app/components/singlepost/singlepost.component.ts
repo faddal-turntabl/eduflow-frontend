@@ -34,7 +34,7 @@ export class SinglepostComponent implements OnInit {
 
   getQuestions(){
     this.qService.getQuestions().subscribe((data) => {
-      this.question = data;
+      this.question = data[0];
     })
   }
 

@@ -5,8 +5,8 @@
             "user_id": 4,
             "user": "Aisha Animashaun",
             "catergory_id": 3,
-            "title": "DIfferentiation of e",
-            "question": "How do we differentiate e",
+            "title": "This is question 1",
+            "question": "Question 1 is here",
             "created_at": "21/05/2023"
         },
         {
@@ -14,7 +14,7 @@
             "user_id": 4,
             "user": "Aisha Animashaun",
             "catergory_id": 3,
-            "title": "DIfferentiation of e",
+            "title": "This is question 2",
             "question": "How do we differentiate e",
             "created_at": "21/05/2023"
         },
@@ -39,7 +39,7 @@
         {
             "question_id": 5,
             "user_id": 4,
-            "user": "Aisha Animashaun",
+            "user": "Emmanuel",
             "catergory_id": 3,
             "title": "DIfferentiation of e",
             "question": "How do we differentiate e",

@@ -3,7 +3,7 @@
         <div class="post-owner">
             <img src="https://picsum.photos/50" alt="">
             <div>
-                <p>{{question.user}}</p>
+                <p>{{question.question}}</p>
                 <small>3 mins ago</small>
             </div>
             <div>
@@ -15,7 +15,7 @@
             {{question.question}}
         </div>
         <div class="post-actions">
-            <section>21 replies</section>
+            <section>{{question.question.length}}</section>
         </div>
     </div>
     <div class="replies">

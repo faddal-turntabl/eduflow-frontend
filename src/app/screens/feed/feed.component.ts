@@ -37,6 +37,9 @@ export class FeedComponent implements OnInit {
       created_at: "21/05/2023"
     }
     ,...this.questions]
+
+    this.questionContent ="";
+    this.questionTitle = "";
   }
 
 }
