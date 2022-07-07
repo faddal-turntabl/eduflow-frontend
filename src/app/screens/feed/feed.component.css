@@ -5,18 +5,58 @@ main{
 }
 
 section{
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
-.posts{
+.feed{
+    width: 35%;
+}
 
+/* post field */
+.post-field{
+    padding: 1rem;
+}
+
+/* .post-field:focus-within{
+    position: absolute;
+    z-index: 999;
+    height: 100vh;
+    width: initial;
+} */
+
+/* .post-field:focus-within:after{
+    content: 'heyyyyy';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(13,12,14,0.1);
+    top: 0;
+    left: -30vw;
+    z-index: 1;
+} */
+
+.post-field textarea{
+    border: 0.1rem solid #eee;
+    border-radius: 1rem;
+    padding: 1rem;
+    outline: none;
+    resize: none;
+    width: 100%;
+}
+
+
+/* posts */
+
+
+.posts{
+    padding: 1rem;
 }
 
 .post{
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
-    margin-bottom: 2rem;
     position: relative;
 }
 
