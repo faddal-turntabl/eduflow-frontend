@@ -1,0 +1,47 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.headline{
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+}
+
+.left{
+    padding: 1rem 3rem;
+    width: 50vw;
+    background: linear-gradient(to right, #FF4B2B, #FF416C);;
+}
+
+.right{
+    width: 50vw;
+    align-self: center;
+    text-align: center;
+}
+
+.right img{
+    width: 50%;
+}
+
+article{
+    padding: 3rem;
+    color: white;
+}
+
+article h1{
+    font-weight: 300;
+}
+
+button{
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+}
+
+.auth-buttons{
+    text-align: center;
+}
