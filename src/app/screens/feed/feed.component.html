@@ -7,17 +7,24 @@
     <!-- all feeeds -->
     <section class="feed">
         <div class="post-field">
-            <div class="post">
+            <form class="post" (submit)="postQuestion($event)">
                 <div class="post-owner">
                     <div>
                         <img src="https://picsum.photos/60" alt="">
                     </div>
                     <div>
-                        <textarea name="" id="" cols="75" rows="5" placeholder="post a question"></textarea>
+                        <input type="text" placeholder="title" name="questionTitle" ngModel="question-title" [(ngModel)]="questionTitle">
+                        <textarea name="" id="" cols="75" rows="5" placeholder="post a question" name="questionContent" ngModel="todo-input" [(ngModel)]="questionContent"></textarea>
                     </div>
                     <div></div>
                 </div>
-            </div>
+                <div>
+
+                    <button type="submit" mat-button color="accent" style="background-color: crimson; color: white">
+                        post
+                    </button>
+                </div>
+            </form>
         </div>
         <!-- posts -->
         <div class="posts" *ngFor="let question of questions; let i = index">

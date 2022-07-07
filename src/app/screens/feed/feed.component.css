@@ -17,6 +17,10 @@ section{
     padding: 1rem;
 }
 
+/* .post-field button{
+    
+} */
+
 /* .post-field:focus-within{
     position: absolute;
     z-index: 999;
@@ -43,6 +47,20 @@ section{
     outline: none;
     resize: none;
     width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+}
+
+.post-field input[type=text]{
+    border: 0.1rem solid #eee;
+    outline: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom: none;
+    width: 100%;
+    border-bottom-right-radius: 0;
 }
 
 
@@ -51,6 +69,19 @@ section{
 
 .posts{
     padding: 1rem;
+}
+
+.posts .post{
+    animation: fade-In 1s linear;
+}
+
+@keyframes fade-In {
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .post{

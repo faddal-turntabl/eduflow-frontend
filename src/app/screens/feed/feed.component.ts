@@ -10,10 +10,33 @@ import questions from './dummy_feed';
 export class FeedComponent implements OnInit {
   questions!: Question[];
 
+  questionTitle = ""
+  questionContent = ""
+
   constructor() { }
 
   ngOnInit(): void {
     this.questions = [...questions]
+  }
+
+  postQuestion(e:any){
+    e.preventDefault();
+
+    if(!this.questionContent.trim() || !this.questionTitle.trim()){
+      alert("please enter all post fields");
+      return;
+    }
+
+    this.questions = [ {
+      question_id: 1,
+      user_id: 4,
+      user: "Me",
+      catergory_id: 3,
+      title: this.questionTitle,
+      question: this.questionContent,
+      created_at: "21/05/2023"
+    }
+    ,...this.questions]
   }
 
 }
