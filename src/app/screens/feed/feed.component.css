@@ -1,11 +1,52 @@
 main{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100vh;
 }
 
 section{
     /* flex-grow: 1; */
+}
+
+
+/* DETAILS */
+.details{
+    padding: 1rem;
+}
+
+.details .post{
+    width: 20rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .post:last-child{
+    padding: 0;
+}
+
+.details .notifications{
+    width: 100%;
+}
+
+.details .notifications h1{
+    padding: 1rem;
+}
+
+.details .notifications article{
+    line-height: 2;
+}
+
+.details .notifications p{
+    padding: 1rem;
+}
+
+.details .notifications p:hover{
+    background-color: #d4edda;
+    color: white;
+    cursor: pointer;
+    color: #155724;
 }
 
 .feed{
@@ -119,4 +160,33 @@ section{
 
 .post-content h1{
     margin-bottom: 1rem;
+}
+
+
+/* trending */
+
+.trending{
+    padding: 1rem;
+}
+
+.trending .post{
+    padding: 0;
+    width: 18rem;
+}
+
+.trending h1{
+    padding: 1rem;
+}
+
+.trending article{
+    line-height: 2.5;
+}
+
+.trending p{
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.trending p:hover{
+    background-color: #fafafa;
 }

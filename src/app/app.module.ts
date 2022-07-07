@@ -12,12 +12,14 @@ import { LoginpageComponent } from './screens/auths/loginpage/loginpage.componen
 import { SignuppageComponent } from './screens/auths/signuppage/signuppage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FeedComponent } from './screens/feed/feed.component';
+import { SinglepostComponent } from './components/singlepost/singlepost.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginpageComponent},
   {path: 'signup', component: SignuppageComponent},
   {path: 'home', component: HomepageComponent},
   {path: 'feed', component: FeedComponent},
+  {path: 'feed/question/:id', component: SinglepostComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ]
 
@@ -28,6 +30,7 @@ const routes: Routes = [
     HomepageComponent,
     SignuppageComponent,
     FeedComponent,
+    SinglepostComponent,
   ],
   imports: [
     BrowserModule,
