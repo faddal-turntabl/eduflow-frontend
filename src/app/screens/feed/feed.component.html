@@ -1,6 +1,29 @@
 <main>
-    <section>
-       
+    <section class="details">
+        <div class="post">
+            <div>
+                <img src="https://picsum.photos/65" alt="">
+            </div>
+            <div>
+                <p>Aisah Animshaun</p>
+                <p style="text-align: center; color: #aaa">
+                    <small>@anima_shaun</small>
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="post">
+            <div class="notifications">
+                <h1>Notifications</h1>
+                <article>
+                    <p>Michael replied to your question</p>
+                    <p>Abigails mentioned you in a thread</p>
+                    <p>Amin posted a new question</p>
+                </article>
+            </div>
+        </div>
     </section>
 
 
@@ -18,7 +41,7 @@
                     </div>
                     <div></div>
                 </div>
-                <div>
+                <div style="text-align: right; margin-top: 1rem">
 
                     <button type="submit" mat-button color="accent" style="background-color: crimson; color: white">
                         post
@@ -28,28 +51,40 @@
         </div>
         <!-- posts -->
         <div class="posts" *ngFor="let question of questions; let i = index">
-            <div class="post">
-                <div class="post-owner">
-                    <img src="https://picsum.photos/50" alt="">
-                    <div>
-                        <p>{{question.user}}</p>
-                        <small>3 mins ago</small>
+            <a href="/feed/question/{{question.question_id}}" style="color: initial" title="click to view full post">
+                <div class="post">
+                    <div class="post-owner">
+                        <img src="https://picsum.photos/50" alt="">
+                        <div>
+                            <p>{{question.user}}</p>
+                            <small>3 mins ago</small>
+                        </div>
+                        <div>
+                            <mat-icon>bookmark_border</mat-icon>
+                        </div>
                     </div>
-                    <div>
-                        <mat-icon>bookmark_border</mat-icon>
+                    <div class="post-content">
+                        <h1>{{question.title}}</h1>
+                        {{question.question}}
+                    </div>
+                    <div class="post-actions">
+                        <section>21 replies</section>
                     </div>
                 </div>
-                <div class="post-content">
-                    <h1>{{question.title}}</h1>
-                    {{question.question}}
-                </div>
-                <div class="post-actions">
-                    <section>21 replies</section>
-                </div>
-            </div>
+            </a>
         </div>
     </section>
 
     <!-- auxilliary -->
-    <section>requests</section>
+    <section class="trending">
+        <div class="post">
+            <h1>Trending</h1>
+            <article>
+                <p>#science</p>
+                <p>#linear equations</p>
+                <p>#super bowl</p>
+                <p>#science</p>
+            </article>
+        </div>
+    </section>
 </main>
